@@ -62,11 +62,14 @@ Sono stati addestrati e confrontati tre modelli di classificazione. Considerato 
     │   └── evaluate.py
     │
     ├── data/
-    │   └── events/           (Inserire qui i file JSON di StatsBomb)
+    │   └── events/               (Inserire qui i file JSON di StatsBomb)
     │
-    ├── plots/                (Generata in automatico: Curve ROC, PR e Confusion Matrix)
-    ├── report.pdf            Relazione di progetto e discussione dei risultati
-    ├── requirements.txt      Dipendenze del progetto
+    ├── documentazione/           (Materiale di presentazione e analisi)
+    │   ├── report.pdf            Relazione di progetto e discussione dei risultati
+    │   └── presentazione.pptx    Slide per l'esposizione del progetto
+    │
+    ├── plots/                    (Generata in automatico: Curve ROC, PR e Confusion Matrix)
+    ├── requirements.txt          Dipendenze del progetto
     └── README.md
 
 ---
@@ -82,10 +85,3 @@ Sono stati addestrati e confrontati tre modelli di classificazione. Considerato 
    `python main.py`
 
 L’esecuzione produrrà a schermo i *Classification Report* per i tre modelli e salverà nella cartella `/plots` tutti i grafici di valutazione comparativa e le singole matrici di confusione.
-
-3.Eseguire il progetto:
-python main.py
-
-L’esecuzione produrrà:
-- metriche di valutazione a terminale
-- grafici (ROC, Precision–Recall, Confusion Matrix) nella cartella plots/
